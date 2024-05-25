@@ -34,6 +34,7 @@ async function getWeather() {
       `http://api.weatherapi.com/v1/current.json?key=fa5f82deb7ec4272a2813613242405&q=${searchInput.value}`,
       { mode: "cors" }
     );
+
     const data = await response.json();
     console.log(data);
 
